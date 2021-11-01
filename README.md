@@ -1,5 +1,5 @@
 <h1 align="center">
-Google Tasks
+Google Tasks Clone
 </h1>
 
 <h4 align="center">A replica of the android version of the Google Tasks for the web</h4>
