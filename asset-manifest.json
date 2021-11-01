@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Google-Tasks-Clone/static/css/main.a3516c84.chunk.css",
+    "main.js": "/Google-Tasks-Clone/static/js/main.9b1e725e.chunk.js",
+    "main.js.map": "/Google-Tasks-Clone/static/js/main.9b1e725e.chunk.js.map",
+    "runtime-main.js": "/Google-Tasks-Clone/static/js/runtime-main.7bf904b5.js",
+    "runtime-main.js.map": "/Google-Tasks-Clone/static/js/runtime-main.7bf904b5.js.map",
+    "static/js/2.cd030909.chunk.js": "/Google-Tasks-Clone/static/js/2.cd030909.chunk.js",
+    "static/js/2.cd030909.chunk.js.map": "/Google-Tasks-Clone/static/js/2.cd030909.chunk.js.map",
+    "index.html": "/Google-Tasks-Clone/index.html",
+    "precache-manifest.f0a9a813ef3c3de06198586919b32478.js": "/Google-Tasks-Clone/precache-manifest.f0a9a813ef3c3de06198586919b32478.js",
+    "service-worker.js": "/Google-Tasks-Clone/service-worker.js",
+    "static/css/main.a3516c84.chunk.css.map": "/Google-Tasks-Clone/static/css/main.a3516c84.chunk.css.map",
+    "static/media/berger.png": "/Google-Tasks-Clone/static/media/berger.81abc80b.png",
+    "static/media/intro-splash.png": "/Google-Tasks-Clone/static/media/intro-splash.405dbbd4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7bf904b5.js",
+    "static/js/2.cd030909.chunk.js",
+    "static/css/main.a3516c84.chunk.css",
+    "static/js/main.9b1e725e.chunk.js"
+  ]
+}
