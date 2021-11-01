@@ -1,0 +1,445 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  padding-left: 3px;
+  color: #2679EB;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #EEEEEE;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-main {
+  position: relative;
+  width: 320px;
+  height: 580px;
+  background-color: #fff;
+  text-align: left;
+  /* padding: 10px; */
+  box-shadow: 5px 5px 8px #d1d1d1;
+  -webkit-box-shadow: 5px 7px 8px -3px rgba(0,0,0,0.34);
+  -moz-box-shadow: 5px 7px 8px -3px rgba(0,0,0,0.34);
+}
+
+/* General Formatting */
+
+h2 {
+  font-weight: normal;
+  font-size: 1.2em;
+  padding-left: 48px;
+  padding-bottom: 15px;
+}
+
+h4 {
+  font-size: 0.65em;
+  font-weight: 600;
+  padding-left: 20px;
+  margin-top: 15px;
+  color: #3F3F3F;
+}
+
+h5 {
+  margin-top: 10px;
+  font-size: .6em;
+  text-align: center;
+}
+
+h6 {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: -15px;
+  font-size: .55em;
+  font-weight: normal;
+  color: #666666;
+  text-align: center;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  color: black;
+}
+
+/* Menu Footer Stylings */
+
+.Menu-footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  -webkit-box-shadow: 0px -1px 5px -1px rgba(153,153,153,1);
+  -moz-box-shadow: 0px -1px 5px -1px rgba(153,153,153,1);
+  box-shadow: 0px -1px 5px -1px #d1d1d1;
+}
+
+.Col-1 {
+  width: 33%;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+.Col-2 {
+  width: 33%;
+  padding: 5px;
+  text-align: center;
+}
+
+.Col-3 {
+  width: 33%;
+  padding-right: 5px;
+  padding-top: 12px;
+  text-align: right;
+}
+
+/* Task-specific Formatting */
+
+.Tasks {
+  height: 430px;
+  overflow: auto;
+}
+
+.Completed-tasks {
+  text-decoration: line-through;
+}
+
+.Image-container {
+  justify-content: center;
+  display: flex;
+}
+
+.Image-splash {
+  margin-top: 50px;
+  margin-bottom: -10px;
+  width: 70%;
+}
+
+.Text-container {
+  display: block;
+}
+
+.Task-row {
+  font-size: .6em;
+  display: flex;
+}
+
+.Task-cols {
+  /* line-height: 18px;
+  height: 20px; */
+  vertical-align: middle;
+}
+
+.Task-cols-check {
+  line-height: 22px;
+  height: 20px;
+}
+
+.Task-divider {
+  width: 100%;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: .75px solid #E8E8E8;
+}
+
+.Task-completed-divider {
+  width: 100%;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: .75px solid #E8E8E8;
+}
+
+.Task-completed-bottom-border {
+  width: 100%;
+  margin-bottom: 5px;
+  border-bottom: .75px solid #E8E8E8;
+}
+
+.Task-completed-row {
+  width: 100%;
+  display: flex;
+}
+
+.Task-completed-cols {
+  width: 50%;
+}
+
+#Image-complete-tasks {
+  padding-top: 20px;
+  margin-bottom: -20px;
+  width: 70%;
+  height: 70%;
+}
+
+/* Add Task Function */
+
+#Add-task {
+  width: 300px;
+  height: 12%;
+  padding: 10px;
+  position: absolute;
+  border-radius: 5px 5px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  /* z-index: 5000; */
+  display: block;
+}
+
+#Add-task-overlay {
+  width: 300px;
+  height: 88%;
+  padding: 10px;
+  transition-duration: 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  background-color: black;
+  /* z-index: 5000; */
+  display: block;
+}
+
+/* .Add-task-overlay:click {
+
+} */
+
+.Add-task-form {
+  display: flex;
+  width: 300px;
+}
+
+.Add-task-input {
+  height: 30px;
+  font-size: 0.6em;
+  font-weight: bold;
+  color: #7F7F7F;
+  border: none;
+  padding-left: 7px;
+}
+
+.Add-task-cols1 {
+  padding-top: 15px;
+  width: 15%
+}
+
+.Add-task-cols2 {
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 5px;
+  width: 70%;
+}
+
+.Submit-button {
+  font-size: 0.6em;
+  font-weight: bold;
+  color: #2679EB;
+}
+
+.Submit-button:hover {
+  cursor: pointer;
+}
+
+/*  Menu Overlay Formatting */
+
+#Menu-overlay {
+  width: 300px;
+  height: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  background-color: black;
+  /* z-index: 5000; */
+  display: block;
+}
+
+#Menu {
+  width: 300px;
+  height: 50%;
+  padding: 10px;
+  position: absolute;
+  border-radius: 7px 7px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  /* z-index: 5000; */
+}
+
+#Email {
+  color: #3F3F3F;
+  display: flex;
+  margin-bottom: 10px;
+  min-height: 50px;
+}
+
+.Email-name {
+  padding-left: 10px;
+  padding-top: 5px;
+  display: table;
+  font-size: 0.5em;
+  font-weight: bold;
+}
+
+.Email-info {
+  padding-left: 10px;
+  display: block;
+  font-size: 0.45em;
+  padding-top: 2px;
+  
+}
+
+.Menu-row {
+  min-height: 10px;
+  color: #3F3F3F;
+  font-size: .55em;
+  font-weight: bold;
+  display: flex;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+#Menu-row2 {
+  min-height: 10px;
+  color: #3F3F3F;
+  font-size: .55em;
+  font-weight: bold;
+  display: flex;
+  padding-left: 5px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+#Menu-row-select {
+  width: 92%;
+  position: absolute;
+  left: 0;
+  color: #005BC2;
+  border-radius: 0px 30px 30px 0px;
+  font-size: .55em;
+  font-weight: bold;
+  display: flex;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  background-color: #CCE4FF;
+}
+
+.Menu-divider {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  border-bottom: .75px solid #E8E8E8;
+}
+
+.Menu-divider2 {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  border-bottom: .75px solid #E8E8E8;
+}
+
+#Berger {
+  width: 285x;
+  height: 28px;
+  padding-top: 5px;
+}
+
+.Vertical-align {
+  vertical-align: middle;
+}
+
+.Vertical-align2 {
+  line-height: 20px;
+  height: 20px;
+}
+
+
+/* SVG and image Formatting */
+
+.Circle-svg {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 18px;
+  height: 18px;
+  fill: #555555;
+}
+
+.Check-svg {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 22px;
+  height: 22px;
+  fill: #2679EB;
+}
+
+.Arrow {
+  width: 22px;
+  height: 22px;
+  fill: #555555;
+  padding-top: 13px;
+  padding-left: 70%;
+}
+
+.Arrow2 {
+  width: 15px;
+  height: 15px;
+  fill: #555555;
+  padding-left: 3px;
+}
+
+.Notes-svg {
+  padding-left: 5px;
+  width: 20px;
+  height: 20px;
+  fill: #2679EB;
+}
+
+.Event-svg {
+  padding-left: 5px;
+  width: 20px;
+  height: 20px;
+  fill: #2679EB;
+}
+
+#Add-svg {
+  width: 18px;
+  height: 18px;
+  fill: #555555;
+  padding-right: 10px;
+}
+
+#Menu-svg {
+  width: 22px;
+  height: 22px;
+  fill: #555555;
+}
+
+#Menu-svg:hover {
+  cursor: pointer;
+}
+
+#More-svg {
+  width: 22px;
+  height: 22px;
+  fill: #555555;
+}
+
+#Google-plus:hover {
+  cursor: pointer;
+}
